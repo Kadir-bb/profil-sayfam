@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+  <!-- Yazı Fontları-->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #9fbbe9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Üst Menü Bölümü */
+    nav {
+      font-family: 'Open Sans', sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #2c3e50;
+      padding: 10px 15px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1000px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul.menu {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 15px;
+    }
+
+    ul.menu li {
+      margin: 0;
+    }
+
+    a.sol-link,
+    a.sag-link {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: #c5c5c5;
+      white-space: nowrap;
+    }
+
+    a.sag-link {
+      color: #db966e;
+    }
+
+    a.sag-link:hover,
+    a.sol-link:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Footer Bölümü */
+    .footer {
+      background-color: #2c3e50;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #db966e;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Kutucuk Alanı*/
+    .content {
+      background: linear-gradient(180deg, #e6ffe6, #ccffcc);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(44, 62, 80, 0.15);
+      padding: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .content li {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .makale {
+      background: linear-gradient(180deg, #7a7777, #f3f3f3);
+    }
+
+    .hakkımda {
+      background: linear-gradient(180deg, #c7f3c7, #83c783);
+    }
+
+    .site-hakkında {
+      background: linear-gradient(180deg, #0e72cf, #cfbef7);
+    }
+
+    /* Makale Hr Ayırıcı */
+    .makale-seperator {
+      border: 0;
+      height: 1.5px;
+      background: linear-gradient(to right, transparent, #6a6a6a, transparent);
+      margin: 30px auto;
+      max-width: 400px;
+    }
+
+    /* Alıntı */
+    .quote {
+      font-style: italic;
+      color: #555;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-family: 'Nunito', sans-serif;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Başlıklar */
+    h1,
+    h2,
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      color: #2c3e50;
+    }
+
+    /* Paragraflar */
+    p {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    /* Resim */
+    .resim {
+      background: url("images/coding.jpg") no-repeat center center;
+      background-size: cover;
+      height: 200px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    main {
+      flex-grow: 1;
+    }
+
+    /* Mobil Platform İçin Optimizasyon */
+    @media (max-width: 768px) {
+      nav {
+        padding: 10px;
+      }
+
+      .menu-container {
+        justify-content: center;
+        gap: 10px;
+      }
+
+      ul.menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Üst Menü -->
+  <nav>
+    <div class="menu-container">
+      <ul class="menu left">
+        <li><a class="sol-link" href="anasayfa.html">Anasayfa</a></li>
+      </ul>
+      <ul class="menu right grup1">
+        <li><a class="sag-link" href="kitaplar.html">Kitaplar</a></li>
+        <li><a class="sag-link" href="filmler.html">Filmler</a></li>
+        <li><a class="sag-link" href="oyunlar.html">Oyunlar</a></li>
+      </ul>
+      <ul class="menu right grup2">
+        <li><a class="sag-link" href="uygulamalar.html">Uygulamalar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Resim Alanı-->
+    <div class="resim"></div>
+
+    <!-- Hakkımda Kutucuğu -->
+    <div class="content hakkımda" id="hakkımda">
+      <h1>Hakkımda</h1>
+      <p>
+        Merhaba! Ben Kadir Bera Bilgin. 2004 Trabzon doğumluyum.
+        Lisemi TED Trabzon Kolejinde tamamladım.
+        Şu anda Avrasya Üniversitesi bilgisayar bölümü öğrencisi olarak eğitim görüyorum.
+        Bilgisayar ile ilgilenmeyi, donanımsal ve yazılımsal anlamda kendime katkı sağlamayı seviyorum.
+      </p>
+    </div>
+
+    <!-- Site Hakkında Kutucuğu -->
+    <div class="content site-hakkında" id="site-Hakkında">
+      <h1>Site Hakkında</h1>
+      <p>
+        Bu sitede aşağıdakiler hakkında bilgi sahibi olabileceksin.
+      </p>
+      <ul>
+        <li>Sevdiğim ve önerebileceğim kitaplar, filmler ve oyunlar</li>
+        <li>Python ve Java dilinde basit ve geliştirici uygulamalar</li>
+      </ul>
+
+    </div>
+
+    <!-- Makale Kutucuğu -->
+    <div class="content makale" id="makale">
+      <h1>Makale</h1>
+      <p>
+        Bu siteyi nasıl yaptığımı ve izlediğim adımları
+        <a href="https://medium.com/@makaleismiyaz" target="_blank"> Medium Sayfamda</a>
+        anlattım. Merak edersen oraya da göz atabilirsin.
+      </p>
+    </div>
+    <hr class="makale-seperator">
+
+    <!-- Alıntı Bölümü-->
+    <blockquote class="quote">"Teknoloji, sihirden ayırt edilemeyecek kadar
+      gelişmiş olabilir."</blockquote>
+
+  </main>
+  <!-- Footer Bölümü -->
+  <footer class="footer">
+    <p>
+      <!-- Linkedin Linki -->
+      <a href="https://www.linkedin.com/in/kadir-bera-bilgin-b66a31337/" target="_blank"
+        style="display: inline-flex; align-items: center; gap: 6px; color: #0A66C2; text-decoration: none; font-weight: 600;">
+        <svg height="24" width="24" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" style="margin-right:4px;">
+          <path
+            d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5v-15H0v15zM7.5 9h4.8v2.1h.1c.7-1.3 2.4-2.7 4.9-2.7 5.3 0 6.3 3.5 6.3 8.1V24h-5v-7.5c0-1.8 0-4-2.4-4-2.4 0-2.8 1.9-2.8 3.9V24h-5V9z" />
+        </svg>
+        LinkedIn
+      </a>
+
+      <!-- Github Linki -->
+      <a href="https://github.com/Kadir-bb" target="_blank"
+        style="display: inline-flex; align-items: center; gap: 6px; color: #db966e; text-decoration: none; font-weight: 600;">
+        <svg height="24" width="24" viewBox="0 0 16 16" fill="#db966e" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+      -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2
+      -3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.54
+      7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+      1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15
+      .46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Medium Linki -->
+      <a href="https://medium.com/@kadirberabilgin616161" target="_blank"
+        style="display: inline-flex; align-items: center; gap: 6px; color: #12100E; text-decoration: none; font-weight: 600;">
+        <svg height="24" width="24" viewBox="0 0 24 24" fill="#12100E" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" style="margin-right:4px;">
+          <path
+            d="M2 4.5C2 4.22 2.22 4 2.5 4h19c.28 0 .5.22.5.5v15c0 .28-.22.5-.5.5h-19a.5.5 0 01-.5-.5v-15zM8 7.5l-3.5 8h2.2l1.1-2.7L9.8 15h2l-3.4-8H8zm7.2 0l-4.3 8h1.7l.8-1.6 2.1 1.6h1.7l-2.7-2.2 2.6-5.8h-1.9z" />
+        </svg>
+        Medium
+      </a>
+    </p>
+
+    <p style="font-size:12px; margin-top:10px;">Son güncelleme: 25 Mayıs 2025</p>
+  </footer>
+
+</body>
+
+</html>

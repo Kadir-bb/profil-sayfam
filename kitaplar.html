@@ -220,75 +220,20 @@
         }
 
         /* Mobil Platform İçin Optimizasyon */
-        @media (max-width: 600px) {
-            nav .menu-container {
-                max-width: 100%;
-                margin: 0 auto;
-                padding: 0 15px;
+        @media (max-width: 768px) {
+            nav {
+                padding: 10px;
             }
 
-            body,
-            html {
-                overflow-x: hidden;
+            .menu-container {
+                justify-content: center;
+                gap: 10px;
             }
 
-            .menu {
+            ul.menu {
                 flex-wrap: wrap;
-                gap: 10px;
-                width: 100%;
-                padding: 0;
-                margin: 0;
                 justify-content: center;
-            }
-
-            .menu.left,
-            .menu.right.grup2 {
-                margin-left: 0 !important;
                 gap: 10px;
-                width: 100%;
-                justify-content: center;
-            }
-
-            .menu.right.grup1 {
-                flex-direction: column !important;
-                margin-left: 0 !important;
-                gap: 10px;
-                width: auto;
-            }
-
-            .menu.right.grup1 li {
-                margin: 5px 0;
-            }
-
-            .menu li {
-                margin: 0 5px;
-            }
-
-            .sol-link,
-            .sag-link {
-                font-weight: bold;
-                font-size: 16px;
-                text-decoration: none;
-                padding: 8px 12px;
-            }
-
-            .resim {
-                height: 150px;
-                width: 100%;
-            }
-
-            .content {
-                margin: 20px 15px;
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-
-            p,
-            .content li {
-                font-size: 16px;
             }
         }
     </style>
